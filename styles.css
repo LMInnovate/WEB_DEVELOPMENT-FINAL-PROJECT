@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    color: #f5f5f5;
+    line-height: 1.6;
+  }
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  .site-header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem 0;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-nav a {
+    color: #ffffff;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.4s ease, transform 0.2s ease;
+  }
+  .main-nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+  }
+  .btn-primary {
+    background: #1f7ae0;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #1f7ae0aa;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-primary:hover {
+    background: #0066cc;
+    box-shadow: 0 0 25px #1f7ae0ff;
+    transform: scale(1.05);
+  }
+  .site-footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 10px #000;
+  }
+  .blog-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+  }
+  input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background: #1e1e1e;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #000;
+  }
+  input:focus, textarea:focus {
+    border-color: #1f7ae0;
+    box-shadow: 0 0 10px #1f7ae0;
+    outline: none;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .main-nav a {
+      margin: 0.5rem 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .btn-primary {
+      width: 100%;
+      text-align: center;
+    }
+    .site-title {
+      font-size: 1.5rem;
+    }
+  }
+/* Glowing Utilities */
+.glow {
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    transition: all 0.3s ease-in-out;
+  }
+  .glow:hover {
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+  
+  /* Glowing boxes with various colors */
+.glow-box-1 { box-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc; }
+.glow-box-2 { box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
+.glow-box-3 { box-shadow: 0 0 10px #33ff33, 0 0 20px #33ff33; }
+.glow-box-4 { box-shadow: 0 0 10px #ff9933, 0 0 20px #ff9933; }
+.glow-box-5 { box-shadow: 0 0 10px #ff6666, 0 0 20px #ff6666; }
+/* Repeating pattern for 100+ variants */
+
+    
